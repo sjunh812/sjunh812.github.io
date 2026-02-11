@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: ko
+lang: ko-KR
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Seoul
@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: JH.dev # the main title
+title: sjunh812 # the main title
 
-tagline: Android Deep Dive # it will display as the subtitle
+tagline: 안드로이드 해부학 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Android와 Jetpack Compose를 중심으로 아키텍처, 성능, 그리고 내부 동작까지 깊이 있게 탐구하는 기술 블로그입니다.
@@ -38,11 +38,11 @@ social:
   email: sjunh812@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/sjunh812 # change to your GitHub homepage
+    # - https://www.linkedin.com/in/준형-서-b28b84206
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
