@@ -1,6 +1,6 @@
 ---
 title: "[Compose Internals] Composable 함수 타입(Composable function types)"
-date: 2026-02-13 13:00:00 +0900
+date: 2026-02-13 13:30:00 +0900
 categories: [Compose]
 tags: [compose internals, compose, composable]
 ---
