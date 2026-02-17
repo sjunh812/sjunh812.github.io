@@ -125,7 +125,7 @@ class ScrollState(initial: Int) : ScrollableState {
     ```
     `@Stable` 어노테이션이 사용될 수 있는 상태로, 값이 바뀔 수는 있지만 **Compose가 관측 가능**한 케이스이다.  
     여기서 Compose가 관측 가능한 케이스란 무엇일까?  
-    앞서 위에서 언급한 `MutableState`가 이에 해당하는데, Compose의 변경을 알릴 수 있기 때문에,  
+    앞서 위에서 언급한 `MutableState`가 이에 해당하는데, Compose에 변경을 알릴 수 있기 때문에,  
     Compose 환경에서 안정적이라고 판단할 수 있다.   
     만약 `MutableList`로 선언한다면, Compose는 해당 값이 변경됐을 때 인지하지 못한다.  
     아래 예시를 살펴보면 좀 더 이해가 쉬울 것이다.
