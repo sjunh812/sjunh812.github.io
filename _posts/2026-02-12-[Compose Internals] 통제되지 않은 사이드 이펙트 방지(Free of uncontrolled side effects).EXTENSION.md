@@ -2,7 +2,7 @@
 title: "[Compose Internals] 통제되지 않은 사이드 이펙트 방지(Free of uncontrolled side effects)"
 date: 2026-02-12 13:00:00 +0900
 categories: [Compose]
-tags: [compose internals, compose, side effects]
+tags: [compose internals, compose, composable, side effects]
 ---
 개발을 하면 "사이드 이펙트(Side Effect)"라는 말을 종종 사용하곤 한다. 사이드 이펙트가 뭘까?  
 > **사이드 이펙트란(Side Effect)?**  

@@ -2,10 +2,11 @@
 title: "[Compose Internals] @Stable"
 date: 2026-02-17 13:00:00 +0900
 categories: [Compose]
-tags: [compose internals, compose, stable, annotation]
+tags: [compose internals, compose, compose compiler, stable, annotation]
 ---
 Compose에서 안정성(Stability)을 보장한다는 것은 smart recomposition 관점에서 매우 중요하다.  
-Compose는 변경이 발생한 지점만 다시 그리기 위해, **변경되지 않은 부분의 recomposition을 건너뛰는(skip) 전략**을   사용한다. 이때 “이 값은 이전과 동일하다”라는 사실을 컴파일러와 런타임에 명확히 전달해줄 수 있어야 하는데,  
+Compose는 변경이 발생한 지점만 다시 그리기 위해, **변경되지 않은 부분의 recomposition을 건너뛰는(skip) 전략**을   
+사용한다. 이때 “이 값은 이전과 동일하다”라는 사실을 컴파일러와 런타임에 명확히 전달해줄 수 있어야 하는데,  
 그 근거로 활용되는 개념이 바로 **안정성(Stability)**이다. 즉, 안정성은 불필요한 recomposition을 방지하기 위한  
 신뢰 가능한 변경 판단 기준이다.  
 
@@ -13,10 +14,11 @@ Compose는 변경이 발생한 지점만 다시 그리기 위해, **변경되지
 `@Stable` 어노테이션에 대해 알아보자.  
 
 `@Stable`은 `@Immutable`보다는 조금 가벼운 약속이다.  
-**가변적임(mutable)** 을 의미하고, `@StableMarker`에 의한 상속의 의미만 지니게 된다.  
+**가변적임(mutable)**을 의미하고, `@StableMarker`에 의한 상속의 의미만 지니게 된다.  
 (`@StableMarker` 어노테이션의 요구사항에 대해 책에서 먼저 확인하자.)  
 
-`@Stable` 어노테이션을 함수나 프로퍼티에 적용하면, 항상 동일한 입력값에 대해 동일한 결과를 반환하다는 사실을 컴파일러에    알린다. 이는 함수의 매개변수가 `@Stable` 또는 `@Immutable`으로 마킹되어있거나, 기본 유형(primitive 타입)인 경우에만 가능하다.  
+`@Stable` 어노테이션을 함수나 프로퍼티에 적용하면, 항상 동일한 입력값에 대해 동일한 결과를 반환하다는 사실을 컴파일러에    
+알린다. 이는 함수의 매개변수가 `@Stable` 또는 `@Immutable`으로 마킹되어있거나, 기본 유형(primitive 타입)인 경우에만 가능하다.  
 
 Composable 함수에 매개변수로 전달된 모든 타입이 안정적인 타입으로 마킹되면, **위치기억법을 기반으로   
 이전 함수 호출과의 매개변수 값이 동일한지 비교하고, 모든값이 동일하다면 recomposition을 생략**한다.  
@@ -30,7 +32,7 @@ else {
     Text("$count")
 }
 
-// 두 Text는 항상 같은 값을 가지지만, 위치 기억법(호출 위치)를 기반으로 다르다.
+// 두 Text는 항상 같은 값을 가지지만, 위치기억법(호출 위치)를 기반으로 다르다.
 ```
 
 한편 `@Stable`은 `@Immutable`과 다르게 클래스 외 함수 범위에도 사용 가능하다고 명시되어 있다.  
@@ -77,7 +79,8 @@ internal object ColumnScopeInstance : ColumnScope {
 
 
 `@Stable`을 사용할 수 있는 타입의 예로는 **public 프로퍼티가 변경되지는 않지만 불변의 객체**로 간주될 수 없는 경우이다.  
-예를 들어, private한 가변적인 상태를 소유하고 있거나, `MutableState` 객체에 대해서 내부적으로 프로퍼티를 위임  (property delegation)하고, 외부에서 사용되는 형태는 불가변적(immutable) 상태인 경우이다.  
+예를 들어, private한 가변적인 상태를 소유하고 있거나, `MutableState` 객체에 대해서 내부적으로 프로퍼티를 위임  
+(property delegation)하고, 외부에서 사용되는 형태는 불가변적(immutable) 상태인 경우이다.  
 
 ```kotlin
 @Stable

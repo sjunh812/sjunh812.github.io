@@ -2,7 +2,7 @@
 title: "[Compose Internals] @DisallowComposableCalls"
 date: 2026-02-15 14:00:00 +0900
 categories: [Compose]
-tags: [compose internals, compose, disallowComposableCalls, annotation]
+tags: [compose internals, compose, compose compiler, disallowComposableCalls, annotation]
 ---
 Compose 어노테이션 중에는 `@DisallowComposableCalls`라는 어노테이션이 있다.  
 이 어노테이션은 **함수 내에서 Composable 함수의 호출이 발생하는 것을 방지**하기 위해 사용된다.  
