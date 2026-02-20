@@ -30,7 +30,7 @@ val foo: () -> Unit = {
 > 방문자 패턴의 주요 목적은 기존의 객체 구조를 변경하지 않고 새로운 연산을 추가하는 것으로,     
 > **데이터 구조 및 처리 기능을 분리**하기 위함이다.  
 > 컴파일러 관점에서 노드의 종류는 함수, 람다, 호출, 조건문, 타입 등 다양하며, 적용해야 할 동작 역시  
-> 여러 종류의 분석(타입 검사, 선언 검사 등)일 수 있기 때문에 방문자 패턴을 사용하다.  
+> 여러 종류의 분석(타입 검사, 선언 검사 등)일 수 있기 때문에 방문자 패턴을 사용한다.  
 {: .prompt-info}
 
 # 선언 검사(Declaration checks)
@@ -76,8 +76,8 @@ Compose Compiler는 이러한 `KtElements` 중 어느 것이든 오버라이드�
     }
     ```
     `Activity`나 `Fragment` 같은 안드로이드 컴포넌트는 `Composer`를 보유하고 있지 않지만,  
-    아래의 `setContent()`와 같은 API를 통해 최초 composition이 생성되며,   
-    이 시점에서 Compose Runtime이 내부적으로 `Composer`를 생성하고 이후부터 Composable 함수 호출이 가능해진다.
+    `setContent()`와 같은 API를 통해 최초 composition이 발생한다.     
+    이 시점에서 Compose Runtime이 내부적으로 `Composer`를 생성하고, 이후부터 Composable 함수 호출이 가능해진다.
 2. **backing field** : 
     > **Backing Field?**   
     > 프로퍼티에 대한 접근을 감시하고, 제어하는 숨겨진 필드로,  
