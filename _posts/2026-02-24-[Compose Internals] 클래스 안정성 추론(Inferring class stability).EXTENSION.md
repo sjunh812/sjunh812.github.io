@@ -4,6 +4,9 @@ date: 2026-02-24 13:00:00 +0900
 categories: [Compose]
 tags: [compose internals, compose, compose compiler]
 ---
+> Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
+> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.  
+
 Compose를 개발해본 사람이라면, smart recomposition에 대해 들어본 적이 있을 것이다.  
 smart recomposition은 Composable의 입력값이 변경되지 않았고,  
 해당 입력값이 **안정적(Stable)**으로 간주될 때, Composable의 **recomposition을 생략**하는 것을 

@@ -4,6 +4,9 @@ date: 2026-02-15 14:00:00 +0900
 categories: [Compose]
 tags: [compose internals, compose, compose compiler, disallowComposableCalls, annotation]
 ---
+> Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
+> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.  
+
 Compose 어노테이션 중에는 `@DisallowComposableCalls`라는 어노테이션이 있다.  
 이 어노테이션은 **함수 내에서 Composable 함수의 호출이 발생하는 것을 방지**하기 위해 사용된다.  
 Compose Runtime에서는 Composable 함수 간 호출로 UI 트리 구조를 생성하는데,   

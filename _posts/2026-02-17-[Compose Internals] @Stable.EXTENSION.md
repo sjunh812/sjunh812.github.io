@@ -4,6 +4,9 @@ date: 2026-02-17 13:00:00 +0900
 categories: [Compose]
 tags: [compose internals, compose, compose compiler, stable, annotation]
 ---
+> Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
+> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.  
+
 Compose에서 안정성(Stability)을 보장한다는 것은 smart recomposition 관점에서 매우 중요하다.  
 Compose는 변경이 발생한 지점만 다시 그리기 위해, **변경되지 않은 부분의 recomposition을 건너뛰는(skip) 전략**을   
 사용한다. 이때 “이 값은 이전과 동일하다”라는 사실을 컴파일러와 런타임에 명확히 전달해줄 수 있어야 하는데,  
