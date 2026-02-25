@@ -5,7 +5,7 @@ categories: [Compose]
 tags: [compose internals, compose, composable]
 ---
 > Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
-> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.  
+> 앞의 내용들은 책을 이미 읽었다는 가정하에 소개할 예정이다.  
 
 이번 장에서는 Composable 함수 타입에 대해 개념적으로 다룬다.  
 

@@ -5,7 +5,7 @@ categories: [Compose]
 tags: [compose internals, compose, compose compiler]
 ---
 > Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
-> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.  
+> 앞의 내용들은 책을 이미 읽었다는 가정하에 소개할 예정이다.  
 
 앞서 책에서 Compose Compiler가 다양한 목적을 위해 일련의 컴파일러 익스텐션을 등록한다고 했다.  
 개발자가 코딩하는 동안 문법의 옳고 그름을 안내해주는 **정적 검사기** 형태로 제공되는 것들이 있는데,  

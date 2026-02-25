@@ -1,11 +1,11 @@
 ---
 title: "[Compose Internals] 디폴트 매개변수(Default parameters)"
-date: 2026-02-25 13:00:00 +0900
+date: 2026-02-25 1:00:00 +0900
 categories: [Compose]
 tags: [compose internals, compose, compose compiler]
 ---
 > Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
-> 앞 절의 내용은, 책을 이미 읽었다는 가정하에 소개할 예정이다.
+> 앞의 내용들은 책을 이미 읽었다는 가정하에 소개할 예정이다.  
 
 Composable 함수는 컴파일 타임에 `$default`라는 메타데이터가 매개변수로 추가된다.  
 이번 글에서는 이 디폴트 매개변수에 대해 알아보고자 한다.  
