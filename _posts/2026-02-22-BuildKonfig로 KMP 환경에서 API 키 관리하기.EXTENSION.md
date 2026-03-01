@@ -24,12 +24,12 @@ KMP의 경우, 안드로이드 공식문서에서 아래와 같이 소개하고 
 즉, **KMP에서는 `BuildConfig`를 지원하지 않고, 이를 대체하는 특정 플러그인을 사용하라** 명시되어 있다.  
 대체 방법으로 `BuildKonfig`를 언급하고 있는데, `BuildKonfig`가 뭘까?  
 
-# BuildKonfig
+# **BuildKonfig** 
 ---
 `BuildKonfig`는 서드파티 라이브러리이다.  
 이 라이브러리를 사용하면, Android에서 환경을 설정하는 방식과 유사하게 작업을 수행할 수 있다.  
 
-## 사용 방법
+## **사용 방법**
 1. libs.version.toml  
     ```toml
     buildKonfig = "0.17.1"
@@ -82,7 +82,7 @@ KMP의 경우, 안드로이드 공식문서에서 아래와 같이 소개하고 
 
     ```
 
-## targetConfigs
+## **targetConfigs**
 아래와 같이 `targetConfigs`를 통해, KMP 환경에 맞는 각 OS별 `BuildKonfig`를 생성할 수도 있다.  
 ```kotlin
 // 사용 모듈 내 build.gradle.kts
@@ -131,7 +131,7 @@ internal actual object BuildKonfig {
 }
 ```
 
-## productFlavor
+## **productFlavor**
 Android Gradle Plugin(AGP)에서 지원하는 productFlavor 기능에 대해서도 일부 지원하고 있는데,  
 전역적으로 적용되지 않기 때문에 gradle.properties에 직접 명시해야한다.  
 ```

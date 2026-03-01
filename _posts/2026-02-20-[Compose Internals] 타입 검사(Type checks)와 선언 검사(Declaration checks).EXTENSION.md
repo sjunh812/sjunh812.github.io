@@ -11,7 +11,8 @@ tags: [compose internals, compose, compose compiler]
 개발자가 코딩하는 동안 문법의 옳고 그름을 안내해주는 **정적 검사기** 형태로 제공되는 것들이 있는데,  
 함수 호출, 타입 및 선언에 대한 검사기가 그 예시이다.  
 이 중 **타입 검사(Type checks)**와 **선언 검사(Declaration checks)**에 대해 알아보자.  
-# 타입 검사(Type checks)
+
+# **타입 검사(Type checks)**
 ---
 `@Composable` 어노테이션을 함수 외 타입에 사용하는 경우가 있다. 그래서 Compose Compiler에는  
 타입 추론과 관련된 검사가 있어, `@Composable` 어노테이션이 달린 타입을 예상했지만, 실제로는 어노테이션이  
@@ -36,7 +37,7 @@ val foo: () -> Unit = {
 > 여러 종류의 분석(타입 검사, 선언 검사 등)일 수 있기 때문에 방문자 패턴을 사용한다.  
 {: .prompt-info}
 
-# 선언 검사(Declaration checks)
+# **선언 검사(Declaration checks)**
 ---
 호출 위치 및 타입 검사 외에도 element의 선언 위치와 관련해서 프로퍼티, 프로퍼티 접근자, 함수 선언, 함수 매개변수와 같은 것들도 검사되어야 한다.  
 호출 및 타입 검사로 모든 처리가 가능할 수도 있다는 생각이 들 수도 있지만, **재정의(override)** 시 발생할 수 있는 **선언 오류**에 대한 검사가 필요하다.  
