@@ -5,7 +5,7 @@ categories: [Compose]
 tags: [compose internals, compose, compose runtime]
 ---
 > Compose Internals 책을 읽고 발표한 내용을 정리한 글이다.  
-> 앞의 내용들은 책을 이미 읽었다는 가정하에 소개할 예정이다.    
+> 앞선 내용들은 책을 이미 읽었다는 가정하에 설명한다.   
 
 앞서 책에서 슬롯 테이블에 대해 알아보았다.  
 > **슬롯 테이블(Slot Table)?**   
@@ -109,7 +109,7 @@ A         A   C         B
 그리고 변경 목록에 있는 변경 사항을 적용하기 위해 어떤 스레드를 사용할지 결정한다.  
 **변경 사항을 적용하기 위한 스레드는 `LaunchedEffect`가 사이드 이펙트를 실행하기 위해 사용하는 디폴트 컨텍스트가 되기도 한다.**  
 
-## **변경 사항 적용 스레드 vs `LaunchedEffect` 실행 스레드**
+## **변경 사항 적용 스레드 vs LaunchedEffect 실행 스레드**
 아래는 `LaunchedEffect` 코드이다.  
 ```kotlin
 @Composable
