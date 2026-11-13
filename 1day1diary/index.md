@@ -6,7 +6,7 @@ sitemap: true
 ---
 
 <!-- 원문: diary-project 저장소 README와 docs/store/listing.md. 기능·가격이 바뀌면 함께 고친다. -->
-<style>.content table th, .content table td { white-space: normal; }</style>
+<style>.content table th, .content table td { white-space: normal !important; }</style>
 
 
 <img src="/assets/img/1day1diary/icon.png" width="96" alt="1일 1일기 앱 아이콘" />

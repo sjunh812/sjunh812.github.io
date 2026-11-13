@@ -6,7 +6,7 @@ sitemap: true
 ---
 
 <!-- 원문: diary-project 저장소 docs/legal/terms.md. 원문을 고치면 이 파일과 노션을 함께 고친다. -->
-<style>.content table th, .content table td { white-space: normal; }</style>
+<style>.content table th, .content table td { white-space: normal !important; }</style>
 
 1일 1일기(서주냥, 대표 서준형)를 이용하실 때 알아 두실 내용입니다.
 
