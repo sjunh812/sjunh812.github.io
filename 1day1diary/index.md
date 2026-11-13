@@ -15,12 +15,12 @@ sitemap: true
 
 [Google Play에서 받기](https://play.google.com/store/apps/details?id=org.sjhstudio.diary)
 
-<p>
-  <img src="/assets/img/1day1diary/screen-1.png" width="24%" alt="기분 고르기" />
-  <img src="/assets/img/1day1diary/screen-2.png" width="24%" alt="일기 목록" />
-  <img src="/assets/img/1day1diary/screen-3.png" width="24%" alt="캘린더" />
-  <img src="/assets/img/1day1diary/screen-4.png" width="24%" alt="기분 통계" />
-</p>
+<div style="display: flex; gap: 8px;">
+  <img src="/assets/img/1day1diary/screen-1.png" style="width: 24%; margin: 0;" alt="기분 고르기" />
+  <img src="/assets/img/1day1diary/screen-2.png" style="width: 24%; margin: 0;" alt="일기 목록" />
+  <img src="/assets/img/1day1diary/screen-3.png" style="width: 24%; margin: 0;" alt="캘린더" />
+  <img src="/assets/img/1day1diary/screen-4.png" style="width: 24%; margin: 0;" alt="기분 통계" />
+</div>
 
 ## 할 수 있는 것
 
@@ -29,7 +29,7 @@ sitemap: true
 | 쓰기 | 글, 사진, 기분, 날씨, 장소를 한 편에 담아요. 굵게, 밑줄, 글자색, 형광펜, 목록을 쓸 수 있어요. |
 | 다시 보기 | 목록, 캘린더, 검색, 즐겨찾기로 지난 일기를 찾아요. |
 | 기분 통계 | 주, 월, 연 단위로 어떤 기분이 많았는지 봐요. |
-| 백업과 복원 | 일기와 사진을 내 구글 드라이브에 백업할 수 있어요. 자동 백업을 켜면 하루 한 번 백업해요. 복원하면 휴대폰에 있는 일기와 합쳐져요. |
+| 백업과 복원 | 사진까지 구글 드라이브에 백업할 수 있어요. 복원하면 지금 일기와 합쳐져요. |
 | 잠금과 휴지통 | 비밀번호나 생체 인증으로 잠가요. 삭제한 일기는 휴지통에 30일 동안 남아요. |
 
 ## 구글 드라이브 권한
