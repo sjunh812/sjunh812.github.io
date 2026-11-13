@@ -9,15 +9,15 @@ sitemap: true
 <style>.content table th, .content table td { white-space: normal !important; }</style>
 
 
-<img src="/assets/img/1day1diary/icon.png" width="96" alt="1일 1일기 앱 아이콘" />
+![1일 1일기 앱 아이콘](/assets/img/1day1diary/icon.png){: width="96" height="96" .normal }
 
-바쁜 사람을 위한 간편한 일기장이에요. 기분을 고르고 몇 줄만 남기면 오늘 일기가 끝나요.
+바쁜 사람을 위한 간편한 일기장 앱이에요. 기분을 고르고 몇 줄만 남기면 오늘 일기가 끝나요.
 
 회원 가입이 없어요. 일기는 휴대폰에 저장되고, 원하면 사진까지 내 구글 드라이브에 백업할 수 있어요.
 
 [Google Play에서 받기](https://play.google.com/store/apps/details?id=org.sjhstudio.diary)
 
-<img src="/assets/img/1day1diary/screens.png" alt="기분 고르기, 일기 목록, 캘린더, 기분 통계 화면" />
+![기분 고르기, 일기 목록, 캘린더, 기분 통계 화면](/assets/img/1day1diary/screens.png){: .normal }
 
 ## 할 수 있는 것
 
