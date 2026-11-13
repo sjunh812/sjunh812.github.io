@@ -15,12 +15,7 @@ sitemap: true
 
 [Google Play에서 받기](https://play.google.com/store/apps/details?id=org.sjhstudio.diary)
 
-<div style="display: flex; gap: 8px;">
-  <img src="/assets/img/1day1diary/screen-1.png" style="width: 24%; margin: 0;" alt="기분 고르기" />
-  <img src="/assets/img/1day1diary/screen-2.png" style="width: 24%; margin: 0;" alt="일기 목록" />
-  <img src="/assets/img/1day1diary/screen-3.png" style="width: 24%; margin: 0;" alt="캘린더" />
-  <img src="/assets/img/1day1diary/screen-4.png" style="width: 24%; margin: 0;" alt="기분 통계" />
-</div>
+<img src="/assets/img/1day1diary/screens.png" alt="기분 고르기, 일기 목록, 캘린더, 기분 통계 화면" />
 
 ## 할 수 있는 것
 
