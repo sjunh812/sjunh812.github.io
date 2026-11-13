@@ -9,7 +9,7 @@ sitemap: true
 <style>.content table th, .content table td { white-space: normal !important; }</style>
 
 
-![1일 1일기 앱 아이콘](/assets/img/1day1diary/icon.png){: width="96" height="96" .normal }
+![1일 1일기 앱 아이콘](/assets/img/1day1diary/app-icon.png){: width="96" height="96" .normal }
 
 바쁜 사람을 위한 간편한 일기장 앱이에요. 기분을 고르고 몇 줄만 남기면 오늘 일기가 끝나요.
 
